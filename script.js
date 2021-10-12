@@ -36,8 +36,18 @@ function showMovie_data(data) {
     let name = document.createElement("p");
     name.innerText = data.Title + "  (" + year_release.innerText + ")  ";
 
+    // let rating = document.createElement("p");
+    // rating.innerText = "IMDB Rating :   " + data.imdbRating;
+
     let rating = document.createElement("p");
-    rating.innerText = "IMDB Rating :   " + data.imdbRating;
+    if (data.imdbRating > 8.5) {
+      rating.innerHTML =
+        "IMDB Rating:   " +
+        data.imdbRating +
+        " / 10   <span><h3>Recommended</h3></span>";
+    } else {
+      rating.innerHTML = "IMDB Rating:   " + data.imdbRating + " / 10";
+    }
 
     let releaseDate = document.createElement("p");
     releaseDate.innerText = "Released :  " + data.Released;
