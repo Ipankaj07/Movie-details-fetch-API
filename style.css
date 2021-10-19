@@ -83,8 +83,8 @@ input {
   font-weight: 600;
 }
 
-span h3{
-  font-size: 17px !important; 
+span h3 {
+  font-size: 17px !important;
   width: 40%;
   padding: 3%;
   border-radius: 5px;
@@ -92,7 +92,6 @@ span h3{
   margin-left: 1%;
   background-color: #5b639c;
 }
-
 
 /* =============================== header ============================================ */
 
@@ -141,6 +140,17 @@ header .navigation li a {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+#login-div p {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#login-div p:hover {
+  color: rgb(228, 137, 228);
 }
 
 header .navigation li a:hover {
